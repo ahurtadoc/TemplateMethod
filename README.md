@@ -50,7 +50,8 @@ class Realization extends Generalization {
         System.out.println( "Realization.stepThree");
     }
      // 5. Derived classes can override implemented methods
-    // 6. Derived classes can override and "call back to" base class methods //protected void stepFor() {
+    // 6. Derived classes can override and "call back to" base class methods 
+    protected void stepFor() {
         System.out.println("Realization.stepFor");
         super.stepFor();
     }
