@@ -5,7 +5,7 @@ Se usa un **método** como plantilla, de ahí su nombre **"Template Method"**, e
 
 Ejemplo clase base
 
-```
+```java
 abstract class Generalization {
     // 1. Standardize the skeleton of an algorithm in a "template" method
     void findSolution() {
@@ -30,7 +30,7 @@ abstract class Generalization {
 
 Las clases **concretas** pueden sobrescribir los métodos 
 
-```
+```java
 stepOne();
 stepTwo();
 stepThr();
@@ -39,7 +39,7 @@ stepFor();
 Sin embargo, no pueden modificar el método **findSolution()** ya que es la plantilla, que a su vez **obliga** a cada clase concreta a implementar este método. 
 
 Ejemplo clase concreta
-```
+```java
 class Realization extends Generalization {
     // 4. Derived classes can override placeholder methods
     protected void stepTwo() {
@@ -58,7 +58,7 @@ class Realization extends Generalization {
 }
 ```
 Ejecución del código
-```
+```java
 public class TemplateMethodDemo {
     public static void main(String[] args) {
         Generalization algorithm = new Realization();
